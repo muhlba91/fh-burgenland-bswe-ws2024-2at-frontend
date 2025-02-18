@@ -1,0 +1,9 @@
+{
+  "@quasar/testing-unit-vitest": {
+    "options": ["ui"]
+  },
+  "@quasar/testing-e2e-cypress": {
+    "port": "5173",
+    "options": ["code-coverage"]
+  }
+}
