@@ -1,0 +1,213 @@
+---
+name: Verify
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  conform:
+    runs-on: ubuntu-latest
+    name: Conform
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - uses: siderolabs/conform@6380738b7fdfc68b208ce0674c4ac1ba314ba600 # v0.1.0-alpha.27
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  test:
+    runs-on: ubuntu-latest
+    name: Tests
+    strategy:
+      max-parallel: 4
+      matrix:
+        node-version: ["20"]
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - run: |
+          corepack enable
+
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install --immutable
+
+      - run: |
+          yarn test:unit:ci
+          yarn test:e2e:ci
+
+  eslint:
+    runs-on: ubuntu-latest
+    name: ESLint
+    strategy:
+      max-parallel: 4
+      matrix:
+        node-version: ["20"]
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - run: |
+          corepack enable
+
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install --immutable
+
+      - run: yarn lint
+
+  audit:
+    runs-on: ubuntu-latest
+    name: Node Audit
+    strategy:
+      max-parallel: 12
+      matrix:
+        node-version: ["20"]
+
+    steps:
+      - uses: step-security/harden-runner@cb605e52c26070c328afc4562f0b4ada7618a84e # v2.10.4
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+
+      - run: |
+          corepack enable
+
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install --immutable
+
+      - run: yarn npm audit
+        continue-on-error: true # allow the workflow to continue even if there are vulnerabilities, npm audit often shows problems
+
+  cyclonedx:
+    runs-on: ubuntu-latest
+    name: SBOM
+    strategy:
+      max-parallel: 4
+      matrix:
+        node-version: ["20"]
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - run: |
+          corepack enable
+
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install --immutable
+
+      - run: yarn cyclonedx
+
+      - uses: anchore/scan-action@v6
+        id: anchore
+        with:
+          sbom: .quasar/sbom.json
+          fail-build: true
+          severity-cutoff: medium
+        continue-on-error: true # we can skip this as informational only, in a production environment we would want to fail the build
+      - uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: ${{ steps.anchore.outputs.sarif }}
+        continue-on-error: true # TODO: in private repositories we do not have access to the CodeQL action, so we need to continue even if it fails
+
+  shellcheck:
+    runs-on: ubuntu-latest
+    name: ShellCheck
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: ./deploy
+          format: gcc
+
+      - uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: ./deploy
+          format: diff
+
+  build:
+    runs-on: ubuntu-latest
+    name: Build SPA
+    needs:
+      - test
+      - eslint
+      - audit
+      - cyclonedx
+    strategy:
+      max-parallel: 4
+      matrix:
+        node-version: ["20"]
+
+    steps:
+      - uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - run: |
+          corepack enable
+
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install --immutable
+
+      - run: yarn build

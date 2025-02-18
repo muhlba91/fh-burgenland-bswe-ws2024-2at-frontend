@@ -1,0 +1,32 @@
+// Common dialog styles
+.base-dialog,
+.create-user-dialog,
+.create-location-dialog,
+.confirm-dialog {
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90vw;
+  margin: 20px;
+
+  .close-button {
+    margin-right: -8px;
+  }
+
+  .dialog-button {
+    border-radius: 8px;
+    min-width: 100px;
+  }
+}
+
+// Common dialog backdrop styling
+:deep(.q-dialog__backdrop) {
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+// Dialog form inputs
+.dialog-input {
+  .q-field__control {
+    border-radius: 8px;
+  }
+}

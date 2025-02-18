@@ -1,0 +1,40 @@
+// app global css in SCSS form
+
+// Import shared styles
+@import './shared/utils';
+@import './shared/dialogs';
+@import './shared/cards';
+@import './shared/material-icons';
+
+// Global styles
+body {
+  background-color: #f0f2f5;
+}
+
+// Global leaflet map popup styles
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  padding: 0;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0;
+  line-height: normal;
+}
+
+.map-popup {
+  padding: 8px 12px;
+  min-width: 150px;
+}
+
+.popup-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1976d2;
+  margin-bottom: 2px;
+}
+
+.popup-subtitle {
+  font-size: 12px;
+  color: #666;
+}

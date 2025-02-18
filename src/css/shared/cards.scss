@@ -1,0 +1,99 @@
+// Common card styles
+.feature-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Common card styles with weather-specific elements
+.hero-card {
+  background: linear-gradient(135deg, #42a5f5 0%, #2979ff 100%);
+  color: white;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(41, 121, 255, 0.2);
+}
+
+.weather-info-card {
+  @extend .feature-card;
+  height: 100%;
+}
+
+.weather-feature {
+  padding: 24px 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Hourly forecast card
+.hourly-card {
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .text-h6 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.base-card {
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+
+  &.hoverable {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.weather-card {
+  @extend .base-card;
+  background: white;
+
+  .card-section {
+    padding: 16px;
+  }
+
+  .card-divider {
+    margin: 8px 0;
+  }
+}
+
+.map-card {
+  @extend .base-card;
+  overflow: hidden;
+
+  .map-container {
+    height: 100%;
+    min-height: 300px;
+  }
+}

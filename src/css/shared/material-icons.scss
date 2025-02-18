@@ -1,0 +1,35 @@
+// Custom material icon styles for map markers
+.custom-div-icon {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px !important;
+  height: 36px !important;
+
+  .material-icons {
+    color: #1976d2;
+    font-size: 36px;
+  }
+}
+
+// Common icon styles
+.metar-icon,
+.weather-icon,
+.weather-metric .q-icon {
+  color: #42a5f5;
+}
+
+// Common icon sizes
+.icon-xs {
+  font-size: 16px;
+}
+
+.icon-sm {
+  font-size: 20px;
+}
+
+.icon-md {
+  font-size: 24px;
+}
