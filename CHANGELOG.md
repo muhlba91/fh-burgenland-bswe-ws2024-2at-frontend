@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.1...v1.1.2) (2025-02-21)
+
+
+### Miscellaneous Chores
+
+* **ci:** allow failure of attestations for private repository ([e3abe5f](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/e3abe5f865d94fd6bec972175a52d49bc54cf606))
+
 ## [1.1.1](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.0...v1.1.1) (2025-02-21)
 
 
