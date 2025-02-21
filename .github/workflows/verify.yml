@@ -144,14 +144,14 @@ jobs:
 
       - run: yarn cyclonedx
 
-      - uses: anchore/scan-action@v6
+      - uses: anchore/scan-action@7c05671ae9be166aeb155bad2d7df9121823df32 # v6
         id: anchore
         with:
           sbom: .quasar/sbom.json
           fail-build: true
           severity-cutoff: medium
         continue-on-error: true # we can skip this as informational only, in a production environment we would want to fail the build
-      - uses: github/codeql-action/upload-sarif@v3
+      - uses: github/codeql-action/upload-sarif@9e8d0789d4a0fa9ceb6b1738f7e269594bdd67f0 # v3
         with:
           sarif_file: ${{ steps.anchore.outputs.sarif }}
         continue-on-error: true # TODO: in private repositories we do not have access to the CodeQL action, so we need to continue even if it fails
