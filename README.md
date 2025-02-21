@@ -133,3 +133,5 @@ You can find the deployment scripts in [deploy](./deploy/).
 ## Notes
 
 - This project served as an experiment with GitHub Copilot creating approximately over 90% of the code, including tests and most code documentation.
+- Some workflow steps are allowed to fail due to the repository being private and not having access to certain security features.
+- The workflow does not store the artifacts of the release build. If necessary, you can add the `actions/upload-artifact` action to the workflow.
