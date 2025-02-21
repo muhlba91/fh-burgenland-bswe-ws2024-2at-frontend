@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.0...v1.1.1) (2025-02-21)
+
+
+### Miscellaneous Chores
+
+* **ci:** update github actions to allow attestations ([a12ba53](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/a12ba539efbf5f7e3b533b0a47ebec6ced171ff5))
+
 ## [1.1.0](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.0.0...v1.1.0) (2025-02-21)
 
 
