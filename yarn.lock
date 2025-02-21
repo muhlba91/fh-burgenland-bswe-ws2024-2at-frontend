@@ -898,7 +898,7 @@ __metadata:
     cross-env: "npm:^7.0.3"
     cypress: "npm:^14.0.0"
     eslint: "npm:^9.14.0"
-    eslint-plugin-cypress: "npm:^2.15.1"
+    eslint-plugin-cypress: "npm:^4.0.0"
     eslint-plugin-vue: "npm:^9.30.0"
     globals: "npm:^15.12.0"
     leaflet: "npm:^1.9.4"
@@ -3725,14 +3725,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^2.15.1":
-  version: 2.15.2
-  resolution: "eslint-plugin-cypress@npm:2.15.2"
+"eslint-plugin-cypress@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "eslint-plugin-cypress@npm:4.1.0"
   dependencies:
-    globals: "npm:^13.20.0"
+    globals: "npm:^15.11.0"
   peerDependencies:
-    eslint: ">= 3.2.1"
-  checksum: 10c0/bcc521633251a852dc3c115455ddda931435bb61c0895e5ad1abe43acb3a15fc0b0e79bf73b7aa078794a2b1084232f1b74ffe39d631a3f312265f97941cd290
+    eslint: ">=9"
+  checksum: 10c0/991d3cc48ed139a52bec4e48e3be2b97274c63f0dd1d14f5b2a1a86315c9adf8a85c91837d64a83b177f07b8c410634d6db44f2555b97aeb96549f4dfac04b10
   languageName: node
   linkType: hard
 
@@ -4611,7 +4611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^13.20.0, globals@npm:^13.24.0":
+"globals@npm:^13.24.0":
   version: 13.24.0
   resolution: "globals@npm:13.24.0"
   dependencies:
@@ -4627,7 +4627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.12.0":
+"globals@npm:^15.11.0, globals@npm:^15.12.0":
   version: 15.15.0
   resolution: "globals@npm:15.15.0"
   checksum: 10c0/f9ae80996392ca71316495a39bec88ac43ae3525a438b5626cd9d5ce9d5500d0a98a266409605f8cd7241c7acf57c354a48111ea02a767ba4f374b806d6861fe
