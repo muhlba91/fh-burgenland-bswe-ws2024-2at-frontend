@@ -57,7 +57,7 @@
     "prettier": "^3.3.3",
     "start-server-and-test": "^2.0.10",
     "typescript": "~5.5.3",
-    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-checker": "^0.9.0",
     "vitest": "^2.0.5",
     "vue-router-mock": "^1.1.0",
     "vue-tsc": "^2.0.29"
