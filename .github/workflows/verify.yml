@@ -119,6 +119,9 @@ jobs:
   cyclonedx:
     runs-on: ubuntu-latest
     name: SBOM
+    permissions:
+      contents: read
+      security-events: write
     strategy:
       max-parallel: 4
       matrix:
