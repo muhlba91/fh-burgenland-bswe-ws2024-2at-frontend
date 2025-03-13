@@ -37,6 +37,7 @@ The code quality is ensured by the following tools:
 
 - [ESLint](https://eslint.org/) for JavaScript linting
 - [Vitest with v8 Coverage](https://vitest.dev/guide/coverage) for code coverage
+- [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities) for dependency security
 - [Conform](https://github.com/siderolabs/conform) for commit message linting
 - [CycloneDX](https://cyclonedx.org/) for software bill of materials generation
 - [Grype](https://github.com/anchore/grype) for software bill of materials scanning
@@ -132,6 +133,7 @@ You can find the deployment scripts in [deploy](./deploy/).
 
 ## Notes
 
-- This project served as an experiment with GitHub Copilot creating approximately over 90% of the code, including tests and most code documentation.
+- This project served as an experiment with GitHub Copilot (Anthropic Claude 3.5 Sonnet) creating approximately over 90% of the code, including tests and most code documentation.
 - Some workflow steps are allowed to fail due to the repository being private and not having access to certain security features.
 - The workflow does not store the artifacts of the release build. If necessary, you can add the `actions/upload-artifact` action to the workflow.
+- Features have been added, modified, or removed to showcase specific aspects of the implementation and software management.

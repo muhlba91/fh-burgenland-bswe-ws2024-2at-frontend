@@ -74,4 +74,3 @@ jobs:
         with:
           subject-path: |
             .quasar/sbom.json
-        continue-on-error: true # TODO: in private repositories we do not have access to the security actions, so we need to continue even if it fails
