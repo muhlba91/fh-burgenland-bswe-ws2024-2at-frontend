@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.3...v1.1.4) (2025-03-13)
+
+
+### Bug Fixes
+
+* **ci:** allow sarif to fail ([0aedc9b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0aedc9bade66574ac645f0c4f10a72c807dd5cfb))
+
 ## [1.1.3](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.2...v1.1.3) (2025-03-13)
 
 
