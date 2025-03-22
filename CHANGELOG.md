@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.1.4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.3...v1.1.4) (2025-03-22)
+
+
+### Bug Fixes
+
+* **ci:** allow sarif to fail ([0aedc9b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0aedc9bade66574ac645f0c4f10a72c807dd5cfb))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-node action to v4.3.0 ([ca3440b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/ca3440b05390c79c470bf00c57ac2adaf4275c56))
+* **deps:** update actions/upload-artifact action to v4.6.2 ([0254310](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0254310a21f1bde91dc975f5daaa0419e18d624e))
+* **deps:** update dependency @types/node to v22.13.11 ([ced2c67](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/ced2c67a429a50724d41331a6dc03090e2761c45))
+* **deps:** update dependency axios to v1.8.4 ([fd304e4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/fd304e4e0c261df0b7ef6c0db4cba9ac0ca41cde))
+* **deps:** update dependency vite-plugin-checker to v0.9.1 ([1a099d1](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/1a099d1a121a4c8c861b934713a40b116ad55b71))
+* **deps:** update eslint monorepo to v9.23.0 ([9b87fa8](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/9b87fa872047e1425c7f223c6493469aae3c900c))
+* **deps:** update github/codeql-action action to v3.28.12 ([577fd70](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/577fd704f7dac79b378531c48b226535c03f671d))
+* **deps:** update github/codeql-action digest to 5f8171a ([074f1a5](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/074f1a59cfb41b9899626e5149cbe33641411ae6))
+* **deps:** update pre-commit hook gitleaks/gitleaks to v8.24.2 ([03a9cee](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/03a9cee383f85b50e20db2373b339fc9ccda6901))
+* **deps:** update vitest monorepo to v3.0.9 ([1ef42b6](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/1ef42b6256c5d0916d8c7b9596a2f5a7e22fc8d7))
+
 ## [1.1.3](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.2...v1.1.3) (2025-03-13)
 
 
