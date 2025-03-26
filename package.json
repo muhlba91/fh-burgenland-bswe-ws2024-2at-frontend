@@ -35,7 +35,7 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@cyclonedx/yarn-plugin-cyclonedx": "^2.0.0",
+    "@cyclonedx/yarn-plugin-cyclonedx": "^3.0.0",
     "@eslint/js": "^9.14.0",
     "@quasar/app-vite": "^2.0.0",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^6.1.0",

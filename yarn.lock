@@ -244,12 +244,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cyclonedx/yarn-plugin-cyclonedx@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@cyclonedx/yarn-plugin-cyclonedx@npm:2.0.0"
+"@cyclonedx/yarn-plugin-cyclonedx@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@cyclonedx/yarn-plugin-cyclonedx@npm:3.0.0"
   bin:
     cyclonedx-yarn: bin/cyclonedx-yarn-cli.js
-  checksum: 10c0/74c523b0e7651977662d664f40aec385bd3b0ab9d6b8b31e13baa9f8d5046be4d3cb88a95d7c393d1f7f1fd6dad7cd2b196aa9b21ea2e7a753f87bacd53b230a
+  checksum: 10c0/8d5cbbcd4001399bc37a7b9604c7bb2463f553c3546d31cc38107eceb78b783960be1e3f21884f9ac9f8d8416088034218b83fb45ec581d8263c1213d1fbcb90
   languageName: node
   linkType: hard
 
@@ -749,7 +749,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@muhlba91/fh-burgenland-bswe-ws2024-2at-frontend@workspace:."
   dependencies:
-    "@cyclonedx/yarn-plugin-cyclonedx": "npm:^2.0.0"
+    "@cyclonedx/yarn-plugin-cyclonedx": "npm:^3.0.0"
     "@eslint/js": "npm:^9.14.0"
     "@quasar/app-vite": "npm:^2.0.0"
     "@quasar/extras": "npm:^1.16.4"
