@@ -1,5 +1,58 @@
 # Changelog
 
+## [1.1.4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.3...v1.1.4) (2025-04-11)
+
+
+### Bug Fixes
+
+* **ci:** allow sarif to fail ([0aedc9b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0aedc9bade66574ac645f0c4f10a72c807dd5cfb))
+
+
+### Miscellaneous Chores
+
+* **deps:** bump vite from 6.1.1 to 6.2.3 ([b8b9e07](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/b8b9e078f54f4944812be36a04ec43247469cbba))
+* **deps:** bump vite from 6.2.3 to 6.2.4 ([ecf8bfd](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/ecf8bfdefb351c77e3a5511c365913e2714ecc4e))
+* **deps:** update actions/dependency-review-action action to v4.6.0 ([5b9c291](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/5b9c2915fdd12030a8e4b5f9cc782dc56962f544))
+* **deps:** update actions/setup-node action to v4.3.0 ([ca3440b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/ca3440b05390c79c470bf00c57ac2adaf4275c56))
+* **deps:** update actions/upload-artifact action to v4.6.2 ([0254310](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0254310a21f1bde91dc975f5daaa0419e18d624e))
+* **deps:** update dependency @cyclonedx/yarn-plugin-cyclonedx to v3 ([90515e4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/90515e4773d273d395652619bdc8df2a9f963500))
+* **deps:** update dependency @cyclonedx/yarn-plugin-cyclonedx to v3.0.1 ([56b2460](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/56b246062ff70651fdcf8a7890ddf314f17070e8))
+* **deps:** update dependency @cyclonedx/yarn-plugin-cyclonedx to v3.0.2 ([9d69e9d](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/9d69e9ddc8b7b2cc7ed53a50c59a9feb0f65caf8))
+* **deps:** update dependency @eslint/js to v9.24.0 ([3d871fc](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/3d871fc4e1ac86f93b3723a85f305e7712df0a49))
+* **deps:** update dependency @quasar/app-vite to v2.2.0 ([4456cb3](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/4456cb3d177e893b608dad136d0c305255db7f5d))
+* **deps:** update dependency @types/leaflet to v1.9.17 ([6aeda87](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/6aeda873536febd140daf3363f4e7c51cad7c796))
+* **deps:** update dependency @types/node to v22.13.11 ([ced2c67](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/ced2c67a429a50724d41331a6dc03090e2761c45))
+* **deps:** update dependency @types/node to v22.13.13 ([7d50de2](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/7d50de2970a3d4ad9989fe658d5847ca6d2bc83f))
+* **deps:** update dependency @types/node to v22.13.14 ([5998aae](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/5998aaed271e873649593183a83a2a5549139111))
+* **deps:** update dependency @types/node to v22.13.16 ([7db5dc6](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/7db5dc6094fdedcab7f32963b94a35d6f30cad27))
+* **deps:** update dependency @types/node to v22.13.17 ([a9b795b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/a9b795bab9bfa554ac79af311309c8763d0f1adf))
+* **deps:** update dependency @types/node to v22.14.0 ([aa96198](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/aa961981cd4e43ffb0319911f51d867f04708b30))
+* **deps:** update dependency axios to v1.8.4 ([fd304e4](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/fd304e4e0c261df0b7ef6c0db4cba9ac0ca41cde))
+* **deps:** update dependency cypress to v14.2.1 ([d09ad05](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/d09ad0599a5e2c08ce8f218f87a9b2a09c28f888))
+* **deps:** update dependency cypress to v14.3.0 ([5390871](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/5390871be98b80dfce009d2d5f3d065ceae7cc51))
+* **deps:** update dependency eslint to v9.24.0 ([5fa9e46](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/5fa9e465810df08861f8ae997f320345a357e26a))
+* **deps:** update dependency eslint-plugin-cypress to v4.2.1 ([191edae](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/191edae06c39db9e504aa26327bf438bd2e4fb9f))
+* **deps:** update dependency typescript to v5.8.3 ([6c46219](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/6c462195b548153251327209bf5a91a890a2644b))
+* **deps:** update dependency vite-plugin-checker to v0.9.1 ([1a099d1](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/1a099d1a121a4c8c861b934713a40b116ad55b71))
+* **deps:** update eslint monorepo to v9.23.0 ([9b87fa8](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/9b87fa872047e1425c7f223c6493469aae3c900c))
+* **deps:** update github/codeql-action action to v3.28.12 ([577fd70](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/577fd704f7dac79b378531c48b226535c03f671d))
+* **deps:** update github/codeql-action action to v3.28.13 ([9b8f9fb](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/9b8f9fb2d0e95962c1179e91aa32297f90f387f6))
+* **deps:** update github/codeql-action action to v3.28.14 ([baa8fb9](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/baa8fb9511733655834430f0052a8dd0a7b5340d))
+* **deps:** update github/codeql-action action to v3.28.15 ([061a48a](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/061a48a7fbdf70d3ecbeb19148aba19129d708cb))
+* **deps:** update github/codeql-action digest to 1b549b9 ([0fb297c](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/0fb297cfcfb9ece8ee58bc72bc92401835bf24fa))
+* **deps:** update github/codeql-action digest to 45775bd ([788dfd9](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/788dfd92c989e2c4b1ca9d6da4adc46b7ad5a38c))
+* **deps:** update github/codeql-action digest to 5f8171a ([074f1a5](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/074f1a59cfb41b9899626e5149cbe33641411ae6))
+* **deps:** update github/codeql-action digest to fc7e4a0 ([7294360](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/72943606f540ed2f72763ea406112690c9fba1e1))
+* **deps:** update pre-commit hook gitleaks/gitleaks to v8.24.2 ([03a9cee](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/03a9cee383f85b50e20db2373b339fc9ccda6901))
+* **deps:** update pre-commit hook gitleaks/gitleaks to v8.24.3 ([c487415](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/c4874155a151442bc0fabae0b57dccd8c016c247))
+* **deps:** update pre-commit hook pre-commit/mirrors-eslint to v9.24.0 ([86dca78](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/86dca781281875aa13e7509c03d5505ab8d512d3))
+* **deps:** update step-security/harden-runner action to v2.11.1 ([774e54b](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/774e54bbbb0ae683e5f610b6bdf5ddb51ae2ebf3))
+* **deps:** update vitest monorepo to v3.0.9 ([1ef42b6](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/1ef42b6256c5d0916d8c7b9596a2f5a7e22fc8d7))
+* **deps:** update vitest monorepo to v3.1.1 ([6a05eb9](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/6a05eb9dead59e5f1d2edaf69b2572a4998f095b))
+* **deps:** update yarn to v4.8.0 ([819fd17](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/819fd174a1bc8066d602d7ea0468fe43ce4b84c6))
+* **deps:** update yarn to v4.8.1 ([d78f3c5](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/d78f3c5dd4a053958a696e3e0c175e600836b833))
+* **deps:** update yarn to v4.9.0 ([98c7483](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/commit/98c74835d897bd88d3379b161b72394344332a08))
+
 ## [1.1.3](https://github.com/muhlba91/fh-burgenland-bswe-ws2024-2at-frontend/compare/v1.1.2...v1.1.3) (2025-03-13)
 
 
