@@ -938,8 +938,8 @@ __metadata:
   linkType: hard
 
 "@quasar/quasar-app-extension-testing-e2e-cypress@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@quasar/quasar-app-extension-testing-e2e-cypress@npm:6.1.0"
+  version: 6.2.0
+  resolution: "@quasar/quasar-app-extension-testing-e2e-cypress@npm:6.2.0"
   dependencies:
     "@cypress/code-coverage": "npm:^3.12.26"
     cross-env: "npm:^7.0.3"
@@ -948,12 +948,12 @@ __metadata:
     start-server-and-test: "npm:^2.0.3"
     vite-plugin-istanbul: "npm:^5.0.0"
   peerDependencies:
-    cypress: ^12.2.0 || ^13.2.0
-    eslint-plugin-cypress: ^2.12.1
+    cypress: ^12.2.0 || ^13.2.0 || ^14.0.0
+    eslint-plugin-cypress: ">=2.0.0"
   peerDependenciesMeta:
     eslint-plugin-cypress:
       optional: true
-  checksum: 10c0/3925b67f4686f7855ba2dd911480009deea26a807b98c850ae94028c1496f5fe37d1926104429685a069861027a3e0bb237dd3e6b64dea55b906048b74d53966
+  checksum: 10c0/dc5065a241406db70066307e8391ae7eb900665cae4ff9bcba4c963a35b7c8915ed0cd523064b30ed975a0e4f6b95a71d6e43995882aa5b5905ac2a798876fea
   languageName: node
   linkType: hard
 
