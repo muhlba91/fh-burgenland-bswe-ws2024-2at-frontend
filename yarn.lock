@@ -1057,12 +1057,12 @@ __metadata:
   linkType: hard
 
 "@quasar/app-vite@npm:^2.0.0":
-  version: 2.2.1
-  resolution: "@quasar/app-vite@npm:2.2.1"
+  version: 2.3.0
+  resolution: "@quasar/app-vite@npm:2.3.0"
   dependencies:
     "@quasar/render-ssr-error": "npm:^1.0.3"
     "@quasar/ssl-certificate": "npm:^1.0.0"
-    "@quasar/vite-plugin": "npm:^1.9.0"
+    "@quasar/vite-plugin": "npm:^1.10.0"
     "@types/chrome": "npm:^0.0.262"
     "@types/compression": "npm:^1.7.5"
     "@types/cordova": "npm:^11.0.3"
@@ -1121,7 +1121,7 @@ __metadata:
       optional: true
   bin:
     quasar: bin/quasar.js
-  checksum: 10c0/2f023f6848ce9fcaa69e9521fe957f21467c99015c0cbe2ecbb9f4fc8a6581aabe2e9952d4b1395911f6e1d282c381d65840d7707b2953e18a37b674ee4320a6
+  checksum: 10c0/1a9e2bb8333b91bb51487cb9bffbeb5fc08c43c51cb085c13073de045e4b91abef164c5e4e500ff6c24cd4b522b0852020176b2df012ff29008b8975496ffef3
   languageName: node
   linkType: hard
 
@@ -1191,15 +1191,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@quasar/vite-plugin@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "@quasar/vite-plugin@npm:1.9.0"
+"@quasar/vite-plugin@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@quasar/vite-plugin@npm:1.10.0"
   peerDependencies:
-    "@vitejs/plugin-vue": ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+    "@vitejs/plugin-vue": ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     quasar: ^2.16.0
-    vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
     vue: ^3.0.0
-  checksum: 10c0/dbcc1a874be0a86314d738f661acaff39bcd6fb129dba00d90f904b00f252c23246ab25e5ac10cfdd73abb320b2357d2af08d48c6f0d503a2400f4816ff1b45d
+  checksum: 10c0/9824addfb0e2c08d0baeffbcfb05a5768b3f82fe5303639242931f4ebce44df80a73a1e37fcb4267894c57965e6fc9d20a27e600dba04edc05534e2821d17832
   languageName: node
   linkType: hard
 
