@@ -8693,8 +8693,8 @@ __metadata:
   linkType: hard
 
 "vite-plugin-checker@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "vite-plugin-checker@npm:0.10.0"
+  version: 0.10.1
+  resolution: "vite-plugin-checker@npm:0.10.1"
   dependencies:
     "@babel/code-frame": "npm:^7.27.1"
     chokidar: "npm:^4.0.3"
@@ -8735,7 +8735,7 @@ __metadata:
       optional: true
     vue-tsc:
       optional: true
-  checksum: 10c0/d51c7e32ce81d43efcb6047ae9fbac27b1d4754bceffce12aa16c723a486cba5711f9bde33f04d39ce19758618cde034668a31d39d35bb40e1148ae62b9ff016
+  checksum: 10c0/fd766c39537fad9a1ef92b0fba09b69080cb2d4e818fc4b6468fc6c7bfc08ff9aa559ae0712afc1ef94fce81e162900c9b4ed101340f786e067667137461e378
   languageName: node
   linkType: hard
 
