@@ -156,6 +156,7 @@ jobs:
       - uses: github/codeql-action/upload-sarif@d6bbdef45e766d081b84a2def353b0055f728d3e # v3
         with:
           sarif_file: ${{ steps.anchore.outputs.sarif }}
+        continue-on-error: true # the anchore/scan-action sometimes generates an invalid sarif file here; hence, we continue on error
 
   shellcheck:
     runs-on: ubuntu-latest
