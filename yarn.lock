@@ -972,7 +972,7 @@ __metadata:
     vitest: "npm:^3.0.0"
     vue: "npm:^3.4.18"
     vue-router: "npm:^4.0.12"
-    vue-router-mock: "npm:^1.1.0"
+    vue-router-mock: "npm:^2.0.0"
     vue-tsc: "npm:^3.0.4"
   languageName: unknown
   linkType: soft
@@ -9008,13 +9008,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router-mock@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "vue-router-mock@npm:1.1.0"
+"vue-router-mock@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "vue-router-mock@npm:2.0.0"
   peerDependencies:
     vue: ^3.2.23
     vue-router: ^4.0.12
-  checksum: 10c0/6d7cf4e6aaa01384ee6b1f34fa0947e5922444693315d65634d1a5531bca687fe6902aebbce4a57a5ea37efcc6f3dfa2e093b09b58057b1bde00061d0ee3c13c
+  checksum: 10c0/3ec959659482a304f6acf56be1f86e162783afb949fc535016a10e79595d6877445cf3775a29d677ea575831ff532e7f911120a40c0ccda2a80b2829627dca4c
   languageName: node
   linkType: hard
 
