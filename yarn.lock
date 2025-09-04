@@ -420,11 +420,11 @@ __metadata:
   linkType: hard
 
 "@cyclonedx/yarn-plugin-cyclonedx@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "@cyclonedx/yarn-plugin-cyclonedx@npm:3.1.0"
+  version: 3.1.1
+  resolution: "@cyclonedx/yarn-plugin-cyclonedx@npm:3.1.1"
   bin:
     cyclonedx-yarn: bin/cyclonedx-yarn-cli.js
-  checksum: 10c0/608ff217099884cf1121ccccf7bd3e3c9341389f26fee23315b9f12b846ef9192e81dbb22e82c381070d6c62cc6e3b6c08c4b570ca99099b63c50ca27d89d9e1
+  checksum: 10c0/00e09c79c4acf91ac7dea5431650009dc147a1478c49525fc1a1f923515222037885dcb38f7d1b70e870bc7d9566b3969aff0c2939065eb06453eb5d2004b1e8
   languageName: node
   linkType: hard
 
