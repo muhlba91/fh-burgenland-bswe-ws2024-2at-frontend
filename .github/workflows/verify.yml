@@ -154,7 +154,7 @@ jobs:
           sbom: .quasar/sbom.json
           fail-build: false # we can skip this as informational only, in a production environment we would want to fail the build
           severity-cutoff: medium
-      - uses: github/codeql-action/upload-sarif@e296a935590eb16afc0c0108289f68c87e2a89a5 # v4
+      - uses: github/codeql-action/upload-sarif@f443b600d91635bebf5b0d9ebc620189c0d6fba5 # v4
         with:
           sarif_file: ${{ steps.anchore.outputs.sarif }}
         continue-on-error: true # the anchore/scan-action sometimes generates an invalid sarif file here; hence, we continue on error
