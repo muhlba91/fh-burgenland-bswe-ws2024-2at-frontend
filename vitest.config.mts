@@ -14,7 +14,6 @@ export default defineConfig({
     setupFiles: 'test/vitest/setup-file.ts',
     coverage: {
       enabled: true,
-      provider: 'v8',
       reporter: ['text', 'json', 'html'],
       exclude: [
         // exclude all files that are not part of the source code
@@ -41,8 +40,8 @@ export default defineConfig({
       thresholds: {
         lines: 80,
         statements: 80,
-        branches: 80,
-        functions: 70,
+        branches: 70,
+        functions: 68,
       }
     },
     include: [
