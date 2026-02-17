@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@cyclonedx/yarn-plugin-cyclonedx": "^3.2.1",
-    "@eslint/js": "^9.39.2",
+    "@eslint/js": "^10.0.0",
     "@quasar/app-vite": "2.3.0",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^6.2.1",
     "@quasar/quasar-app-extension-testing-unit-vitest": "^1.2.4",
@@ -50,7 +50,7 @@
     "autoprefixer": "^10.4.23",
     "cross-env": "^10.1.0",
     "cypress": "^15.8.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-plugin-cypress": "^6.0.0",
     "eslint-plugin-vue": "^10.6.2",
     "globals": "^17.0.0",
