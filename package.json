@@ -37,7 +37,7 @@
   "devDependencies": {
     "@cyclonedx/yarn-plugin-cyclonedx": "^3.2.1",
     "@eslint/js": "^10.0.0",
-    "@quasar/app-vite": "2.3.0",
+    "@quasar/app-vite": "2.4.1",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^6.2.1",
     "@quasar/quasar-app-extension-testing-unit-vitest": "^1.2.4",
     "@types/leaflet": "^1.9.21",
