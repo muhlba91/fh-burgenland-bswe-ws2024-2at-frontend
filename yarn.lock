@@ -1284,7 +1284,7 @@ __metadata:
     globals: "npm:^17.0.0"
     leaflet: "npm:^1.9.4"
     prettier: "npm:^3.7.4"
-    quasar: "npm:2.18.4"
+    quasar: "npm:2.18.6"
     start-server-and-test: "npm:^2.1.3"
     typescript: "npm:^5.9.3"
     vite-plugin-checker: "npm:^0.12.0"
@@ -7654,10 +7654,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quasar@npm:2.18.4":
-  version: 2.18.4
-  resolution: "quasar@npm:2.18.4"
-  checksum: 10c0/e4464f910726851f5dd6b4f659aade23eeb1b02519fde2970d1ad385f5750c078cbb9747f47fc7ba01ea534df04064fee9ee9311f0717ba4ee7a240d5a270c3a
+"quasar@npm:2.18.6":
+  version: 2.18.6
+  resolution: "quasar@npm:2.18.6"
+  checksum: 10c0/f55a30b9da73a3b91e385afec5ab13480f49e259918966e37eccf8c826bcb3946c2e31bd8cee9697bf04aa19ff4d80d464f7dcb1fefc762ccab76e08014b11e4
   languageName: node
   linkType: hard
 
